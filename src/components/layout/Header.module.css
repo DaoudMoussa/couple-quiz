@@ -1,0 +1,22 @@
+.header {
+    background-color: white;
+    height: 70px;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header > div {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.header h1 {
+    display: inline-block;
+    letter-spacing: 0.3rem;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: bold;  
+}

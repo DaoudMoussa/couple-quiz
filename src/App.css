@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+main { 
+    height: calc(100vh - 35px);
+    padding-top: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rainbow {
+    background: linear-gradient(0deg, rgba(128,255,219,1) 20%, rgba(94,96,206,1) 91%);
+    background: -webkit-linear-gradient(0deg, rgba(128,255,219,1) 20%, rgba(94,96,206,1) 91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Oswald', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rainbow.animated {
+    background: linear-gradient(0deg, rgba(128,255,219,1) 20%, rgba(94,96,206,1) 91%);
+    background: -webkit-linear-gradient(0deg, rgba(128,255,219,1) 20%,rgba(72, 191, 227, 1) 40%, rgba(94, 96, 206, 1) 60%, rgba(72, 191, 227, 1) 80%, rgba(128,255,219,1) 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rainbow.animated:hover {
+    animation: rainbow 0.2s infinite linear ;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes rainbow {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.not-chosen {
+    opacity: 0;
 }
