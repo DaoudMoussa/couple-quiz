@@ -39,3 +39,9 @@ main {
 .not-chosen {
     opacity: 0;
 }
+
+.test-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}

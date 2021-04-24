@@ -14,7 +14,7 @@
     animation: change-section-chosen forwards 2s;
 }
 
-.img-container.chosen ~ div {
+.img-container.not-chosen {
     opacity: 0;
 }
 

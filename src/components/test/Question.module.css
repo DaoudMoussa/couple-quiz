@@ -1,0 +1,39 @@
+.question-container {
+    max-width: 992px;
+    height: 100%;
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    position:absolute;
+    transition: transform 1s;
+    transition: left 1s;
+}
+
+.question-container.active.prev {
+    left: 0%;
+    transform: translateX(-100%);
+}
+
+.question-container.next {
+    left: 100%;
+    transform: translateX(0);
+    opacity: 0;
+}
+
+.question-container.active {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.question-container aside {
+    flex-basis: 25%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e60cd;
+}
+
+.question-container section {
+    flex-basis: 75%;
+}
